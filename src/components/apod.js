@@ -1,4 +1,7 @@
 import React from "react";
+import moment from "moment";
+
+import "./apod.css";
 
 function APoD(props) {
 	const { photoData } = props;
@@ -14,16 +17,18 @@ function APoD(props) {
 	return (
 		<div className="content-container">
 			<header className="top-container">
-				<h2 className="title">{title}</h2>
+				<h1 className="title">{title}</h1>
 				<span className="date">{date}</span>
 			</header>
 			<main>
 				<div className="img-container">
 					<img src={hdurl} alt={`Taken by ${copyright}`} />
 				</div>
-				<p className="details">{explanation} </p>
+				<div>
+					<p className="details">{explanation} </p>
+				</div>
 			</main>
-			<footer>{copyright}</footer>
+			<footer>Image Credit & Copyright: {copyright}</footer>
 		</div>
 	);
 }

@@ -1,0 +1,41 @@
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+img {
+	width: 70%;
+	max-width: 100%;
+}
+
+.content-container {
+	padding: 1% 1%;
+}
+
+.top-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.title {
+	font-size: 5rem;
+}
+
+.date {
+	font-size: 2rem;
+}
+
+.img-container {
+	width: 100%;
+}
+
+.img-container img {
+	object-fit: contain;
+	object-position: center;
+}
